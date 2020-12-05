@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Center</title>
+    <style>
+        body {
+            background: url("img/FitnessFreak2.jpg");
+            padding: 0px;
+            margin: 0px;
+        }
+        .left h3{
+            display: inline-block;
+            font-size: 49px;
+            width: 0px;
+            height: 0px;
+            margin: 0%;
+            color : rgb(111, 111, 133);
+        }
+        .left{
+            /* border: 2px solid red; */
+            width: 20%;
+            height: 115px;
+            display: inline-block;
+        }
+        .mid {
+            /* border: 2px solid yellow; */
+            width: 50%;
+            height: 50px;
+            border-radius: 17px;
+            position: absolute;
+            top : 19px;
+            left : 345px;
+            background-color: rgba(79, 79, 170, 0.781);  
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar a{
+            text-decoration: none;
+            font-size: 26px;
+            color:  rgb(207 220 236);
+            line-height: 19px;
+            padding: 0px 23px;
+        }
+        .navbar a:hover, .navbar a.active{
+            text-decoration: underline;
+            color: rgb(174 114 175);
+        }
+        .right {
+            /* border: 2px solid green; */
+            position: absolute;
+            top: 30px;
+            right : 15px;
+            width: 16%;
+        }
+        .btn{
+            border: 1px solid gray;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            color:#7070e4;
+            background-color: #f6f6f700;
+            padding: 5px 13px;
+            margin: 0px 3px;
+        }
+        .btn:hover{
+            background-color: #aba8cc;
+        }
+        .container{
+            border: 2px solid gray;
+            margin-top: 70px;
+            width: 400px;
+            height: 400px;
+            color: coral;
+            font-size: 60px;
+            line-height: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .container input{
+            display: block;
+            width: 300px;
+            text-align: center;
+            padding: 5px 22px;
+            margin: 7px auto;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+        #submit{
+            color:rgb(231, 149, 119);
+            background-color: black;
+            width: 135px;
+            cursor: pointer;
+            border: 1px solid gray;
+        }
+        #submit:active{
+            color: white;
+            background-color: rgb(28, 28, 29);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left">
+            <img src="img/gym.jpg"> 
+            <h3>Fitness Center</h3>
+        </div>
+
+        <!-- for navbar -->
+        <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+        </div>
+
+        <!-- for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Chat with us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join Now!</h3>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <input type="text" id="age" name="age" placeholder="Enter your age">
+        <input type="text" id="gender" name="gender" placeholder="Enter your gender">
+        <input type="text" id="city" name="city" placeholder="Enter your city">
+        <input type="submit" id="submit" value="Submit">
+    </div>
+
+</body>
+
+</html>
